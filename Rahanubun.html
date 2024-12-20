@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <script>
@@ -20,6 +22,20 @@
             audio.play(); // Mulai musik jika hash ada
         }
     }
+
+    window.onload = function () {
+        if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+            Swal.fire({
+                title: 'Halamanan Di Muat Ulang!',
+                text: 'Akan kembali ke halaman awal.',
+                icon: 'warning',
+                confirmButtonText: 'OK'
+            }).then(() => {
+                window.location.href = 'index.html';
+            });
+        }
+    };
+
 </script>
 
 <body>
@@ -34,8 +50,8 @@
         <div class="container text-center text-white">
             <img src="header.jpg" alt="">
             <h1 data-aos="fade-down" class="title"><span>Keluarga Johanis Rahanubun</span></h1>
-            <p data-aos="fade-up" class="subtitle">Mengucapkan Selamat Natal</p>
-
+            <p data-aos="fade-up" class="subtitle">Mengucapkan</p>
+            <p data-aos="fade-up" class="subtitle">Mengucapkan Selamat Natal 25 Desember 2024</p>
         </div>
     </header>
 
@@ -99,7 +115,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <a href="https://instagram.com" target=""><i class="fab fa-instagram"></i style=color:white>f_r_23</a>
+        <a href="https://www.instagram.com/f_r_23/" target=""><i class="fab fa-instagram"></i style=color:white>f_r_23</a>
     </footer>
 
 
