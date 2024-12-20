@@ -1,0 +1,193 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('pohon.png');
+    margin: 0;
+    padding: 10px;
+    margin-top: 10px;
+    /* overflow: hidden; */
+}
+
+/* Header Section */
+.header {
+    background: url('header.jpg') no-repeat center;
+    background-size: cover;
+    height: 40vh;
+    /* Tinggi lebih kecil untuk mobile */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0;
+    /* Hilangkan margin bawah */
+    font-family: 'Pacifico', cursive;
+
+}
+
+/* About Section */
+.about {
+    padding: 20px;
+    /* Sesuaikan padding untuk ruang konten */
+    margin-top: 0;
+    /* Hilangkan margin atas */
+    color: rgb(255, 255, 255);
+    /* Tambahkan warna teks */
+
+    /* Tambahkan warna latar */
+    font-family: 'Parisienne', cursive;
+}
+
+.btn .fa-gift {
+    font-size: 1.5rem;
+    /* Atur ukuran ikon */
+    color: rgb(0, 0, 0);
+    /* Warna ikon */
+}
+
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+
+}
+
+.container {
+    background-image: url('heaader.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+
+
+
+.subtitle {
+    animation: fadeIn 3s infinite alternate;
+}
+
+
+
+
+/* Button Styles */
+.ucapan .btn {
+    background-color: rgb(0, 0, 0);
+    /* Warna dasar tombol */
+    color: black;
+    /* Teks tombol */
+    border: 1px solid black;
+    /* Batas tombol */
+    border-radius: 5px;
+    /* Sudut tombol yang melengkung */
+    padding: 12px 30px;
+    /* Ukuran padding tombol */
+    font-size: 1rem;
+    /* Ukuran font */
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    /* Mengubah teks menjadi kapital */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Efek transisi */
+    z-index: 10;
+    /* Pastikan tombol berada di atas elemen lainnya */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Efek bayangan untuk tombol */
+}
+
+/* Hover Effect for Buttons */
+.btn:hover {
+    background-color: #ff0000;
+    /* Warna latar belakang saat hover */
+    color: white;
+    /* Ubah warna teks saat hover */
+    transform: translateY(-2px);
+    /* Efek angkat saat hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+    /* Bayangan lebih tegas saat hover */
+}
+
+/* Active Effect for Buttons (Saat ditekan) */
+.btn:active {
+    transform: translateY(2px);
+    /* Efek tombol tertekan */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    /* Bayangan saat tombol ditekan */
+}
+
+/* Button Specific Styles */
+
+
+
+
+/* Button in Ucapan Section */
+.ucapan .btn {
+    /* background-color: #1ce3ee; */
+    color: rgb(253, 5, 5);
+    border-radius: 25px;
+    padding: 2px 20px;
+    font-size: 1rem;
+    font-family: 'Pacifico', cursive;
+
+    font-weight: bold;
+
+}
+
+/* Footer */
+
+.footer {
+    background-color: blanchedalmond;
+    /* Warna latar belakang footer */
+    color: white;
+    /* Warna teks */
+    text-align: center;
+    /* Teks rata tengah */
+    padding: 10px;
+    /* Ruang di dalam footer */
+    font-size: 0.9rem;
+    /* Ukuran font */
+    margin-top: 20px;
+    /* Jarak dari elemen sebelumnya */
+    border-radius: 20px;
+}
+
+.footer a {
+    color: rgb(0, 0, 0);
+    /* Ubah warna tautan menjadi putih */
+    text-decoration: none;
+    /* Hapus garis bawah pada tautan */
+}
+
+.footer a:hover {
+    color: #ddd;
+    /* Warna saat tautan di-hover */
+}
+
+
+
+/* Media Queries for Mobile */
+@media (max-width: 490px) {
+    .header {
+        height: 22vh;
+        /* Kurangi tinggi header */
+    }
+
+    .about {
+        padding: 15px;
+        /* Sesuaikan padding untuk layar kecil */
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

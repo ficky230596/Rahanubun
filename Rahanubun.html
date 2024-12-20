@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Natal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    window.onload = function () {
+        // Mengecek apakah URL mengandung #autoplay-music
+        if (window.location.hash === "#autoplay-music") {
+            var audio = document.getElementById('background-music');
+            audio.play(); // Mulai musik jika hash ada
+        }
+    }
+</script>
+
+<body>
+    <!-- Musik latar belakang -->
+    <audio id="background-music" autoplay loop>
+        <source src="natal.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung audio.
+    </audio>
+    <!-- Header -->
+    <header id="header" class="header">
+
+        <div class="container text-center text-white">
+            <img src="header.jpg" alt="">
+            <h1 data-aos="fade-down" class="title"><span>Keluarga Johanis Rahanubun</span></h1>
+            <p data-aos="fade-up" class="subtitle">Mengucapkan Selamat Natal</p>
+
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="keluarga.jpg" class="img-fluid rounded shadow" alt="Dekorasi Natal">
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <h2>Semangat Natal</h2>
+                    <p>
+                        Natal adalah waktu untuk berbagi kebahagiaan, kedamaian, dan kasih sayang.
+                        Rayakan momen istimewa ini bersama keluarga dan orang terkasih.
+                    </p>
+                    <a href="#ucapan" class="btn btn-danger mt-3">
+                        <i class="fas fa-gift" style="font-size: 1.5rem; color: white;"></i>
+                        Tekan Untuk Ucapan
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ucapan Section -->
+    <section id="ucapan">
+        <div class="container text-center">
+            <h2 data-aos="fade-down"></h2>
+            <div class="row mt-4 g-4">
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <p class="card-text">"Semoga Natal ini membawa kedamaian dan cinta ke dalam hidupmu."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <p class="card-text">"Rayakan Natal dengan cinta, kehangatan, dan kebahagiaan."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <p class="card-text">"Selamat Natal! Damai Natal selalu menyertai kita semua."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#header" class="btn btn-light mt-4" data-aos="zoom-in">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="https://instagram.com" target=""><i class="fab fa-instagram"></i style=color:white>f_r_23</a>
+    </footer>
+
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
