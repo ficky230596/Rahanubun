@@ -70,6 +70,24 @@ h2 {
     animation: fadeIn 3s infinite alternate;
 }
 
+.ucapan1 {
+    /* animation: fadeIn 3s infinite alternate; */
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0); /* Menambahkan bayangan */
+}
+
+/* Gaya kustom untuk background */
+/* Kelas kustom untuk mengubah background */
+.custom-background {
+    background-color: #FFDDC1;  /* Mengubah background dengan warna */
+    background-image: url('santa.png');  /* Menggunakan gambar sebagai latar belakang */
+    background-size: cover;  /* Menyesuaikan gambar dengan ukuran container */
+    background-position: center;  /* Menempatkan gambar di tengah */
+    border-radius: 10px;  /* Memberikan border radius */
+    padding: 20px;  /* Menambahkan padding di dalam popup */
+}
 
 
 

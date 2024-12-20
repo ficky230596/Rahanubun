@@ -29,6 +29,18 @@
             audio.play(); // Mulai musik jika hash ada
         }
 
+        // Menampilkan SweetAlert saat halaman dimuat ulang
+        if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+            Swal.fire({
+                title: 'Halamanan Di Muat Ulang!',
+                text: 'Akan kembali ke halaman awal.',
+                icon: 'warning',
+                confirmButtonText: 'OK'
+            }).then(() => {
+                window.location.href = 'index.html';
+            });
+        }
+
         // Event listener untuk tombol tekan
         const ucapanButton = document.querySelector('.btn-ucapan');
         ucapanButton.addEventListener('click', function (event) {
@@ -37,6 +49,19 @@
             const ucapanSection = document.getElementById('ucapan');
             ucapanSection.style.display = 'block';
             ucapanSection.scrollIntoView({ behavior: 'smooth' });
+
+            // Menampilkan SweetAlert setelah tombol ucapan ditekan
+            //Swal.fire({
+              //  title: 'Ucapan Natal',
+               // text: 'Semoga Natal ini membawa kedamaian dan kebahagiaan untukmu!',
+               // html: '<i class="fas fa-gift" style="font-size: 50px; color: #FFD700;"></i>',
+               // confirmButtonText: 'Terima Kasih',
+               // customClass: {
+               //     popup: 'custom-background'  // Menambahkan kelas kustom untuk background
+               // }
+           // });
+            
+
         });
     };
 </script>
@@ -54,7 +79,7 @@
             <img src="header.jpg" alt="">
             <h1 data-aos="fade-down" class="title"><span>Keluarga Johanis Rahanubun</span></h1>
             <p data-aos="fade-up" class="subtitle">Mengucapkan</p>
-            <p data-aos="fade-up" class="subtitle">Mengucapkan Selamat Natal 25 Desember 2024</p>
+            <p data-aos="fade-up" class="ucapan1"> Selamat Natal 25 Desember 2024</p>
         </div>
     </header>
 
@@ -115,7 +140,8 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <a href="https://www.instagram.com/f_r_23/" target=""><i class="fab fa-instagram"></i style=color:white>f_r_23</a>
+        <a href="https://www.instagram.com/f_r_23/" target=""><i class="fab fa-instagram"></i
+                style=color:white>f_r_23</a>
     </footer>
 
     <!-- Scripts -->
