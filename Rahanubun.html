@@ -52,18 +52,27 @@
 
             // Menampilkan SweetAlert setelah tombol ucapan ditekan
             //Swal.fire({
-              //  title: 'Ucapan Natal',
-               // text: 'Semoga Natal ini membawa kedamaian dan kebahagiaan untukmu!',
-               // html: '<i class="fas fa-gift" style="font-size: 50px; color: #FFD700;"></i>',
-               // confirmButtonText: 'Terima Kasih',
-               // customClass: {
-               //     popup: 'custom-background'  // Menambahkan kelas kustom untuk background
-               // }
-           // });
-            
+            //  title: 'Ucapan Natal',
+            // text: 'Semoga Natal ini membawa kedamaian dan kebahagiaan untukmu!',
+            // html: '<i class="fas fa-gift" style="font-size: 50px; color: #FFD700;"></i>',
+            // confirmButtonText: 'Terima Kasih',
+            // customClass: {
+            //     popup: 'custom-background'  // Menambahkan kelas kustom untuk background
+            // }
+            // });
+
 
         });
     };
+    document.addEventListener('visibilitychange', function () {
+        const audio = document.getElementById('background-music');
+        if (document.hidden) {
+            audio.pause();
+        } else {
+            audio.play();
+        }
+    });
+
 </script>
 
 <body>
